@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    database: dbt-service-account-467217       # project_id de BigQuery
+    schema: raw                                # schema en BigQuery
+    tables:
+      - name: customers
+      - name: orders
