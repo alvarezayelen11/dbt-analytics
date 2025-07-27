@@ -1,8 +1,10 @@
 # dbt-analytics
 
-Proyecto realizado en el marco del curso **dbt Fundamentals** y **Advanced Testing** disponibles en **[dbt Labs](https://learn.getdbt.com/catalog)**.
+Proyecto de práctica enfocado en el desarrollo de un pipeline analítico con **dbt Cloud** y **BigQuery**.
 
-Su objetivo es construir un pipeline analítico simple utilizando **dbt Cloud** y **BigQuery**, aplicando buenas prácticas de modelado, tests y documentación.
+El objetivo es implementar un flujo de transformación de datos aplicando buenas prácticas de modelado, testing y documentación, siguiendo los estándares recomendados por la comunidad de dbt.
+
+Este proyecto fue inspirado en los contenidos de los programas **dbt Fundamentals** y **Advanced Testing** disponibles en **[dbt Labs](https://learn.getdbt.com/catalog)**.
 
 ---
 
