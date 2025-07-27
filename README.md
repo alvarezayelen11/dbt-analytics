@@ -18,6 +18,30 @@ Su objetivo es construir un pipeline analítico simple utilizando **dbt Cloud** 
 - 🔹 **Documentación**: modelos y columnas documentadas con dbt Docs.
 
 ---
+## 📂 **Estructura del proyecto**
+
+```
+dbt-analytics/
+├── models/
+│   ├── staging/
+│   │   ├── jaffle_shop/
+│   │   │   ├── src_jaffle_shop.yml              # Definición de sources para customers y orders
+│   │   │   ├── stg_jaffle_shop__customers.sql   # Modelo staging de clientes
+│   │   │   ├── stg_jaffle_shop__orders.sql      # Modelo staging de órdenes
+│   │   │   └── stg_jaffle_shop.yml              # Tests y documentación de modelos
+│   │   └── stripe/
+│   │       └── stg_stripe__payments.sql         # Modelo staging de pagos Stripe
+│   └── marts/
+│       ├── marketing/
+│       │   └── dim_customers.sql                # Dimensión de clientes con métricas de pedidos
+│       └── finance/
+│           └── fct_orders.sql                   # Tabla de hechos de pedidos
+├── tests/
+│   └── assert_positive_value_for_total_amount.sql # Test singular para validar montos positivos
+└── dbt_project.yml                              # Configuración principal de dbt
+```
+
+---
 
 ## Authors
 
