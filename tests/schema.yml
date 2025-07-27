@@ -1,5 +1,0 @@
-version: 2
-
-tests:
-  - name: assert_positive_value_for_total_amount
-    description: "{{ doc('positive_total_amount') }}"
