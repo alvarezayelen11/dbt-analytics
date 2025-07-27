@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_stripe__payments
+    description: Staged payment data from the Stripe system.
+    columns:
+      - name: payment_id
+        description: Primary key for payments.
+      - name: order_id
+        description: Foreign key referencing stg_orders.order_id.
+      - name: amount
+        description: The payment amount in USD.
