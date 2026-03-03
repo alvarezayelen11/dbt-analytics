@@ -1,4 +1,10 @@
-# dbt-analytics
+# dbt Analytics Pipeline (BigQuery)
+
+![dbt](https://img.shields.io/badge/dbt-Analytics_Engineering-orange?logo=dbt)
+![BigQuery](https://img.shields.io/badge/BigQuery-Data_Warehouse-blue?logo=googlebigquery)
+![dbt Cloud](https://img.shields.io/badge/dbt-Cloud-orange)
+![ELT](https://img.shields.io/badge/Architecture-ELT-green)
+![SQL](https://img.shields.io/badge/SQL-Data_Modeling-lightgrey)
 
 Proyecto de práctica enfocado en el desarrollo de un pipeline analítico con **dbt Cloud** y **BigQuery**.
 
@@ -45,7 +51,23 @@ dbt-analytics/
 
 ---
 
-## Authors
+## Pipeline Overview
+
+```
+Raw tables (BigQuery)
+        ↓
+     Sources
+        ↓
+   Staging models
+        ↓
+     Mart models
+        ↓
+   Analytics layer
+```
+
+---
+
+## Author
 
 - [Ayelén Álvarez](https://www.linkedin.com/in/-ayelen-alvarez/)
 
