@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_zapateria
+    description: "Datos del formulario de la zapatería de Juan"
+    columns:
+      - name: ID
+        description: "Identificador único de cada respuesta"
+        tests:
+          - not_null
+          - unique
+
+      - name: genero
+        description: "Género declarado por el cliente"
+        tests:
+          - accepted_values:
+              values: ["Femenino", "Masculino", "No binario", "Prefiero no contestar", null]
+
+      - name: te_gustaria_recibir_descuentos
+        description: "Preferencia de recibir descuentos"
+        tests:
+          - accepted_values:
+              values: ["SI", "NO", null]
